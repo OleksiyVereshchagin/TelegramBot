@@ -1,0 +1,24 @@
+name: Python Tests
+
+on:
+  push:
+    branches:
+      - main  # Тести запускатимуться тільки при пуші на основну гілку
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Вказуємо, що тести будуть запускатись на Ubuntu
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2  # Крок для завантаження репозиторію
+
+      - name: Set up Python
+        uses: actions/setup-python@v2  # Налаштовуємо Python
+        with:
+          python-version: 3.10  # Вказуємо, яку версію Python використовувати
+
+      - name: Install dependencies
+        run: pip install pytest pytest-cov  # Встановлюємо необхідні залежності для тестування
+
+      - name: Run tests
+        run: pytest --cov=bot_logic  # Запуск тестів з покриттям коду для папки bot_logic
