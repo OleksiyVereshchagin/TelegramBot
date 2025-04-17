@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Це файл Sitemap, який дозволяє пошуковим системам швидко знайти всі сторінки вашого сайту. -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9 ">
+  <!-- Інформація про головну сторінку сайту -->
+  <url>
+    <loc>http://localhost:5500/</loc>  <!-- Тут вказано локальний шлях, замініть на реальний домен після публікації -->
+    <lastmod>2025-04-17</lastmod>  <!-- Дата останньої зміни сторінки -->
+    <changefreq>monthly</changefreq>  <!-- Як часто змінюється сторінка -->
+    <priority>1.0</priority>  <!-- Пріоритет сторінки, де 1.0 - найвищий -->
+  </url>
+</urlset>
