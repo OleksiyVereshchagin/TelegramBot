@@ -1,6 +1,6 @@
 .env
 
-.venv1/
+.venv/
 venv/
 
 .idea/
