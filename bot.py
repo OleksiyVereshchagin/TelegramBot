@@ -72,6 +72,11 @@ class ClearWatchedState(StatesGroup):
 #Привітання та стартове меню
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
+    """
+    Обробник команди /start.
+    Вітання користувача та надання інформації про доступні команди.
+    """
+
     await message.answer(f"Привіт, {message.from_user.first_name}! 👋", reply_markup=kb.main)
 
 
@@ -164,7 +169,8 @@ async def cancel_popular(callback_query: types.CallbackQuery, state: FSMContext)
     # Завершуємо стан, щоб вийти з процесу введення кількості серіалів
     await state.finish()
 
-    await callback_query.message.answer("Процес скасовано. Ви можете спробувати ще раз, натиснувши кнопку рекомендацій.")
+    await callback_query.message.answer("Процес скасовано. Ви можете спробувати ще раз,"
+                                        " натиснувши кнопку рекомендацій.")
     await callback_query.answer()
 
 

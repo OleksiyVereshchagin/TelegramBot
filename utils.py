@@ -1,5 +1,5 @@
-import aiohttp
 import os
+import aiohttp
 
 async def fetch_from_api(endpoint, params=None):
     """Асинхронна функція для виконання HTTP-запитів до API."""
