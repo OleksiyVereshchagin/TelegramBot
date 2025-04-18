@@ -1,8 +1,14 @@
 from aiogram import types
 from bot import cmd_about, answer, cmd_start, cmd_help
-import pytest
-from unittest.mock import AsyncMock, patch
 from bot import add_wishlist_series
+from unittest.mock import AsyncMock, patch
+import pytest
+from search import get_series_by_title
+import os
+from unittest.mock import AsyncMock, patch
+import pytest
+from search import translate_text
+
 
 @pytest.mark.asyncio
 async def test_cmd_about():
@@ -97,3 +103,51 @@ async def test_cmd_help():
     # Додатково: перевірка наявності інших команд (для більш повної перевірки)
     assert "Watched List" in help_text, "Команда 'Watched List' не знайдена в відповіді."
     assert "Watch Later" in help_text, "Команда 'Watch Later' не знайдена в відповіді."
+
+@pytest.mark.asyncio
+async def test_translate_text_with_mock():
+    # Текст для перекладу та очікуваний результат
+    input_text = "Hello"
+    target_lang = "UK"
+    expected_translation = "Привіт"
+
+    # Моканий JSON-відповідь від API DeepL
+    mock_response = {
+        "translations": [{"text": expected_translation}]
+    }
+
+    # Мокання httpx.AsyncClient
+    with patch('httpx.AsyncClient') as MockClient:
+        mock_client_instance = MockClient.return_value  # Моканий екземпляр клієнта
+        mock_post = AsyncMock()
+
+        # Імітуємо асинхронний контекст
+        mock_post.return_value.__aenter__.return_value.json = AsyncMock(return_value=mock_response)
+
+        # Підключення моканого методу до клієнта
+        mock_client_instance.post = mock_post
+
+        # Виклик функції
+        translated_text = await translate_text(input_text, target_lang)
+
+        # Перевірка результату
+        assert translated_text == expected_translation, f"Expected {expected_translation}, but got {translated_text}"
+
+        # Перевірка, що API викликали з правильними параметрами
+        mock_post.assert_awaited_once_with(
+            "https://api-free.deepl.com/v2/translate",
+            data={
+                'auth_key': os.getenv('DEEPL_KEY'),
+                'text': input_text,
+                'target_lang': target_lang
+            }
+        )
+
+
+
+
+import pytest
+
+@pytest.mark.asyncio
+async def test_translate_text_with_mock():
+    assert 1 == 1

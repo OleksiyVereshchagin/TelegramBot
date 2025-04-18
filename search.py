@@ -37,7 +37,7 @@ async def translate_text(text: str, target_lang: str = 'UK') -> str:
         async with httpx.AsyncClient() as client:
             response = await client.post(url, data=params)
             response.raise_for_status()
-            result = response.json()
+            result = await response.json()
             return result['translations'][0]['text'] if 'translations' in result else text
     except httpx.RequestError as e:
         print(f"Error in translation: {e}")
