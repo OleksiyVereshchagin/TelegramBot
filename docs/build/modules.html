@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html lang="uk-UA" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; SeriesBot 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=9b6f216e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=0958edf7"></script>
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="prev" title="Welcome to SeriesBot’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <dl class="py class" id="module-bot">
+<dt class="sig sig-object py" id="bot.ClearWatchedState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">ClearWatchedState</span></span><a class="headerlink" href="#bot.ClearWatchedState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.ClearWatchedState.waiting_for_confirmation">
+<span class="sig-name descname"><span class="pre">waiting_for_confirmation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'ClearWatchedState:waiting_for_confirmation'&gt;</span></em><a class="headerlink" href="#bot.ClearWatchedState.waiting_for_confirmation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.ClearWishlistState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">ClearWishlistState</span></span><a class="headerlink" href="#bot.ClearWishlistState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.ClearWishlistState.waiting_for_confirmation">
+<span class="sig-name descname"><span class="pre">waiting_for_confirmation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'ClearWishlistState:waiting_for_confirmation'&gt;</span></em><a class="headerlink" href="#bot.ClearWishlistState.waiting_for_confirmation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.Form">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">Form</span></span><a class="headerlink" href="#bot.Form" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.Form.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'Form:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.Form.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.MoveToWatchedState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">MoveToWatchedState</span></span><a class="headerlink" href="#bot.MoveToWatchedState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.MoveToWatchedState.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'MoveToWatchedState:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.MoveToWatchedState.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.RemoveState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">RemoveState</span></span><a class="headerlink" href="#bot.RemoveState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.RemoveState.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'RemoveState:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.RemoveState.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.SearchState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">SearchState</span></span><a class="headerlink" href="#bot.SearchState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.SearchState.waiting_for_title">
+<span class="sig-name descname"><span class="pre">waiting_for_title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'SearchState:waiting_for_title'&gt;</span></em><a class="headerlink" href="#bot.SearchState.waiting_for_title" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.UserState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">UserState</span></span><a class="headerlink" href="#bot.UserState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.UserState.waiting_for_count">
+<span class="sig-name descname"><span class="pre">waiting_for_count</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'UserState:waiting_for_count'&gt;</span></em><a class="headerlink" href="#bot.UserState.waiting_for_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.WatchState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">WatchState</span></span><a class="headerlink" href="#bot.WatchState" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.WatchState.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'WatchState:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.WatchState.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.WishlistForm">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">WishlistForm</span></span><a class="headerlink" href="#bot.WishlistForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.WishlistForm.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'WishlistForm:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.WishlistForm.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bot.WishlistRemove">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">WishlistRemove</span></span><a class="headerlink" href="#bot.WishlistRemove" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StatesGroup</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bot.WishlistRemove.waiting_for_series_name">
+<span class="sig-name descname"><span class="pre">waiting_for_series_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;State</span> <span class="pre">'WishlistRemove:waiting_for_series_name'&gt;</span></em><a class="headerlink" href="#bot.WishlistRemove.waiting_for_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.answer">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">answer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.answer" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_add_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_add_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_add_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_add_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_add_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_add_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_keyboard">
+<span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_keyboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cancel_popular'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_keyboard" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_move_to_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_move_to_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_move_to_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_popular">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_popular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_popular" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_remove_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_remove_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_remove_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_remove_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_remove_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_remove_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cancel_search">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cancel_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cancel_search" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє натискання кнопки „Скасувати“ для виходу з пошуку.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_about">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_about</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_about" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_help">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_help</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_help" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_recommendation">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_recommendation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_recommendation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_start">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_start" title="Link to this definition">¶</a></dt>
+<dd><p>Обробник команди /start.</p>
+<p>Вітання користувача та надання інформації про доступні команди.
+Ця функція відповідає користувачу на команду /start, відправляючи привітальне повідомлення
+та пропонуючи основні варіанти взаємодії з ботом.</p>
+<dl class="simple">
+<dt>Аргументи:</dt><dd><p>message (types.Message): Повідомлення, що містить дані про команду /start.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.cmd_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">cmd_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.cmd_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_add_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_add_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_add_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_add_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_add_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_add_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_clear_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_clear_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_clear_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_clear_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_clear_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_clear_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_count">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_count" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє введення кількості серіалів.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_genre_selection">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_genre_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_genre_selection" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє вибір жанру та надає рекомендації.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_invalid_count">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_invalid_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_invalid_count" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє випадки, коли введене значення не є числом.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_move_to_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_move_to_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_move_to_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_popular">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_popular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_popular" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_recommend">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_recommend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_recommend" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_remove_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_remove_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_remove_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_remove_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_remove_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_remove_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_search">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_search" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_show_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_show_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_show_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.handle_show_wishlist">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">handle_show_wishlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackQuery</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.handle_show_wishlist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_clear_watched_confirmation">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_clear_watched_confirmation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_clear_watched_confirmation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_clear_wishlist_confirmation">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_clear_wishlist_confirmation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_clear_wishlist_confirmation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_move_to_watched_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_move_to_watched_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_move_to_watched_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_remove_series_name">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_remove_series_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_remove_series_name" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє введену назву серіалу для видалення зі списку переглянутого.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_remove_wishlist_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_remove_wishlist_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_remove_wishlist_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.process_series_name">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">process_series_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.process_series_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bot.search_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bot.</span></span><span class="sig-name descname"><span class="pre">search_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FSMContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.search_series" title="Link to this definition">¶</a></dt>
+<dd><p>Обробляє введення назви серіалу.</p>
+</dd></dl>
+
+<dl class="py function" id="module-db">
+<dt class="sig sig-object py" id="db.add_watched_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">add_watched_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.add_watched_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.add_wishlist_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">add_wishlist_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.add_wishlist_series" title="Link to this definition">¶</a></dt>
+<dd><p>Додає серіал до списку бажаних користувача</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.clear_watched_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">clear_watched_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.clear_watched_series" title="Link to this definition">¶</a></dt>
+<dd><p>Очищаємо список переглянутих серіалів для конкретного користувача в базі даних.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.clear_wishlist_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">clear_wishlist_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.clear_wishlist_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.create_db_connection">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">create_db_connection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#db.create_db_connection" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.execute_query">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">execute_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.execute_query" title="Link to this definition">¶</a></dt>
+<dd><p>Виконати запит до бази даних.</p>
+<p>Ця функція встановлює з’єднання з базою даних і виконує переданий SQL-запит із параметрами.
+Якщо з’єднання не вдалося встановити або виникла помилка при виконанні запиту,
+вона виводить повідомлення про помилку. Після виконання запиту з’єднання з базою даних закривається.</p>
+<dl class="simple">
+<dt>Аргументи:</dt><dd><p>query (str): SQL-запит, який потрібно виконати.
+<a href="#id1"><span class="problematic" id="id2">*</span></a>args: Додаткові параметри, які передаються в запит (наприклад, значення для параметризованих запитів).</p>
+</dd>
+<dt>Повертає:</dt><dd><p>Результат виконання запиту або None, якщо з’єднання не вдалося встановити або виникла помилка.</p>
+</dd>
+<dt>Винятки:</dt><dd><p>PostgresError: Якщо виникає помилка під час виконання запиту, вона буде виведена в консоль.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.fetch_query">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">fetch_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.fetch_query" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.get_watched_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">get_watched_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.get_watched_series" title="Link to this definition">¶</a></dt>
+<dd><p>Отримує список переглянутих серіалів з БД для конкретного користувача.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.get_wishlist_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">get_wishlist_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.get_wishlist_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.move_to_watched">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">move_to_watched</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.move_to_watched" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.remove_watched_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">remove_watched_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.remove_watched_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.remove_wishlist_series">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">remove_wishlist_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#db.remove_wishlist_series" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="db.series_exists">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">db.</span></span><span class="sig-name descname"><span class="pre">series_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#db.series_exists" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function" id="module-rec">
+<dt class="sig sig-object py" id="rec.format_show_info">
+<span class="sig-prename descclassname"><span class="pre">rec.</span></span><span class="sig-name descname"><span class="pre">format_show_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rec.format_show_info" title="Link to this definition">¶</a></dt>
+<dd><p>Форматує інформацію про серіал для відображення.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="rec.recommend">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rec.</span></span><span class="sig-name descname"><span class="pre">recommend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rec.recommend" title="Link to this definition">¶</a></dt>
+<dd><p>Запитує у користувача вибір жанру для рекомендацій серіалів.</p>
+<p>Ця функція створює клавіатуру з жанрами серіалів та відправляє її користувачу для вибору жанру.
+Після цього користувач отримає відповідь із рекомендаціями на основі вибраного жанру.</p>
+<dl class="simple">
+<dt>Аргументи:</dt><dd><p>message (Message): Повідомлення, що містить дані користувача для надсилання клавіатури.</p>
+</dd>
+<dt>Винятки:</dt><dd><p>Exception: Якщо виникає помилка під час формування клавіатури або відправки повідомлення,
+то вона буде надрукована в консоль.</p>
+</dd>
+</dl>
+</dd></dl>
+
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SeriesBot</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Вперед" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Навігація</h3>
+<p class="caption" role="heading"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">ClearWatchedState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.ClearWatchedState.waiting_for_confirmation"><code class="docutils literal notranslate"><span class="pre">ClearWatchedState.waiting_for_confirmation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.ClearWishlistState"><code class="docutils literal notranslate"><span class="pre">ClearWishlistState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.ClearWishlistState.waiting_for_confirmation"><code class="docutils literal notranslate"><span class="pre">ClearWishlistState.waiting_for_confirmation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.Form"><code class="docutils literal notranslate"><span class="pre">Form</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.Form.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">Form.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.MoveToWatchedState"><code class="docutils literal notranslate"><span class="pre">MoveToWatchedState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.MoveToWatchedState.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">MoveToWatchedState.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.RemoveState"><code class="docutils literal notranslate"><span class="pre">RemoveState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.RemoveState.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">RemoveState.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.SearchState"><code class="docutils literal notranslate"><span class="pre">SearchState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.SearchState.waiting_for_title"><code class="docutils literal notranslate"><span class="pre">SearchState.waiting_for_title</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.UserState"><code class="docutils literal notranslate"><span class="pre">UserState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.UserState.waiting_for_count"><code class="docutils literal notranslate"><span class="pre">UserState.waiting_for_count</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.WatchState"><code class="docutils literal notranslate"><span class="pre">WatchState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.WatchState.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">WatchState.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.WishlistForm"><code class="docutils literal notranslate"><span class="pre">WishlistForm</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.WishlistForm.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">WishlistForm.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.WishlistRemove"><code class="docutils literal notranslate"><span class="pre">WishlistRemove</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot.WishlistRemove.waiting_for_series_name"><code class="docutils literal notranslate"><span class="pre">WishlistRemove.waiting_for_series_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.answer"><code class="docutils literal notranslate"><span class="pre">answer()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_add_watched"><code class="docutils literal notranslate"><span class="pre">cancel_add_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_add_wishlist"><code class="docutils literal notranslate"><span class="pre">cancel_add_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_keyboard"><code class="docutils literal notranslate"><span class="pre">cancel_keyboard()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_move_to_watched"><code class="docutils literal notranslate"><span class="pre">cancel_move_to_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_popular"><code class="docutils literal notranslate"><span class="pre">cancel_popular()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_remove_watched"><code class="docutils literal notranslate"><span class="pre">cancel_remove_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_remove_wishlist"><code class="docutils literal notranslate"><span class="pre">cancel_remove_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cancel_search"><code class="docutils literal notranslate"><span class="pre">cancel_search()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_about"><code class="docutils literal notranslate"><span class="pre">cmd_about()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_help"><code class="docutils literal notranslate"><span class="pre">cmd_help()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_recommendation"><code class="docutils literal notranslate"><span class="pre">cmd_recommendation()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_start"><code class="docutils literal notranslate"><span class="pre">cmd_start()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_watched"><code class="docutils literal notranslate"><span class="pre">cmd_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.cmd_wishlist"><code class="docutils literal notranslate"><span class="pre">cmd_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_add_watched"><code class="docutils literal notranslate"><span class="pre">handle_add_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_add_wishlist"><code class="docutils literal notranslate"><span class="pre">handle_add_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_clear_watched"><code class="docutils literal notranslate"><span class="pre">handle_clear_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_clear_wishlist"><code class="docutils literal notranslate"><span class="pre">handle_clear_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_count"><code class="docutils literal notranslate"><span class="pre">handle_count()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_genre_selection"><code class="docutils literal notranslate"><span class="pre">handle_genre_selection()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_invalid_count"><code class="docutils literal notranslate"><span class="pre">handle_invalid_count()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_move_to_watched"><code class="docutils literal notranslate"><span class="pre">handle_move_to_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_popular"><code class="docutils literal notranslate"><span class="pre">handle_popular()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_recommend"><code class="docutils literal notranslate"><span class="pre">handle_recommend()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_remove_watched"><code class="docutils literal notranslate"><span class="pre">handle_remove_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_remove_wishlist"><code class="docutils literal notranslate"><span class="pre">handle_remove_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_search"><code class="docutils literal notranslate"><span class="pre">handle_search()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_show_watched"><code class="docutils literal notranslate"><span class="pre">handle_show_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.handle_show_wishlist"><code class="docutils literal notranslate"><span class="pre">handle_show_wishlist()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_clear_watched_confirmation"><code class="docutils literal notranslate"><span class="pre">process_clear_watched_confirmation()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_clear_wishlist_confirmation"><code class="docutils literal notranslate"><span class="pre">process_clear_wishlist_confirmation()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_move_to_watched_series"><code class="docutils literal notranslate"><span class="pre">process_move_to_watched_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_remove_series_name"><code class="docutils literal notranslate"><span class="pre">process_remove_series_name()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_remove_wishlist_series"><code class="docutils literal notranslate"><span class="pre">process_remove_wishlist_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.process_series_name"><code class="docutils literal notranslate"><span class="pre">process_series_name()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bot.search_series"><code class="docutils literal notranslate"><span class="pre">search_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.add_watched_series"><code class="docutils literal notranslate"><span class="pre">add_watched_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.add_wishlist_series"><code class="docutils literal notranslate"><span class="pre">add_wishlist_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.clear_watched_series"><code class="docutils literal notranslate"><span class="pre">clear_watched_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.clear_wishlist_series"><code class="docutils literal notranslate"><span class="pre">clear_wishlist_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.create_db_connection"><code class="docutils literal notranslate"><span class="pre">create_db_connection()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.execute_query"><code class="docutils literal notranslate"><span class="pre">execute_query()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.fetch_query"><code class="docutils literal notranslate"><span class="pre">fetch_query()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.get_watched_series"><code class="docutils literal notranslate"><span class="pre">get_watched_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.get_wishlist_series"><code class="docutils literal notranslate"><span class="pre">get_wishlist_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.move_to_watched"><code class="docutils literal notranslate"><span class="pre">move_to_watched()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.remove_watched_series"><code class="docutils literal notranslate"><span class="pre">remove_watched_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.remove_wishlist_series"><code class="docutils literal notranslate"><span class="pre">remove_wishlist_series()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#db.series_exists"><code class="docutils literal notranslate"><span class="pre">series_exists()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rec.format_show_info"><code class="docutils literal notranslate"><span class="pre">format_show_info()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rec.recommend"><code class="docutils literal notranslate"><span class="pre">recommend()</span></code></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="Попередній розділ">Welcome to SeriesBot’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Oleksiy.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
